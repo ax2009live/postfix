@@ -2,6 +2,7 @@
 
 跟 catatnight/docker-postfix 对比，修改如下
 <pre>
+/etc/postfix/main.cf 
 增加 message_size_limit = 51200000      邮件大小 10M 限制修改为 50M；
 增加 smtp_tls_security_level = may      postfix与外部邮件服务器连接时使用tls，
 </pre>
