@@ -1,2 +1,2 @@
-# postfix
-run postfix with smtp authentication (sasldb) in a docker container 
+
+https://github.com/catatnight/docker-postfix
