@@ -8,7 +8,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
 # Start editing
 # Install package here for cache
-	&& apt-get -y install supervisor postfix sasl2-bin opendkim opendkim-tools
+	&& apt-get -y install supervisor postfix sasl2-bin opendkim opendkim-tools \
+	&& rm -rf /var/lib/apt/lists/*
 
 # Add files
 COPY install.sh /opt/install.sh 
