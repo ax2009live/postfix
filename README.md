@@ -21,6 +21,10 @@
 
 Enable TLS(587): save your SSL certificates .key and .crt to /path/to/certs
 
+Login credential should be set to (user@mail.example.com, pwd) in Smtp Client
+
+smtp 客户端用户 user@mail.example.com，密码：pwd
+
 <pre>
 $ sudo docker run -d \
 	--restart=always \
