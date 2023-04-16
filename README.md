@@ -1,3 +1,5 @@
+ 把文件下载生成镜像 docker build -t ax2009live/postfix:v1.0 .
+ 
 用法请请参考 https://github.com/catatnight/docker-postfix
 
 跟 catatnight/docker-postfix 对比，修改如下
