@@ -18,3 +18,16 @@
 ![image](https://user-images.githubusercontent.com/41521020/232178581-8c41553a-bf8b-42ec-9b73-e7c0bbcafcbd.png)
 
 
+
+Enable TLS(587): save your SSL certificates .key and .crt to /path/to/certs
+
+<pre>
+$ sudo docker run -d \
+	--restart=always \
+	--name postfix \
+	-p 587:587 \
+	-e maildomain=mail.example.com -e smtp_user=user:pwd \
+	-v /path/to/certs:/etc/postfix/certs \
+	ax2009live/postfix:v1.0</pre>
+
+
