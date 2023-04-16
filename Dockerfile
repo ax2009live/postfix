@@ -1,4 +1,4 @@
-From ubuntu:trusty
+From ubuntu:18.04
 MAINTAINER ax2009live@gmail.com
 
 # Set noninteractive mode for apt-get
