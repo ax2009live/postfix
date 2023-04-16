@@ -26,7 +26,8 @@ $ sudo docker run -d \
 	--restart=always \
 	--name postfix \
 	-p 587:587 \
-	-e maildomain=mail.example.com -e smtp_user=user:pwd \
+	-e maildomain=mail.example.com \
+	-e smtp_user=user:pwd \
 	-v /path/to/certs:/etc/postfix/certs \
 	ax2009live/postfix:v1.0</pre>
 
